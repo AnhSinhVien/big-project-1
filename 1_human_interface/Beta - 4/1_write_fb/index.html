@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styse.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-database.js"></script>
+    <title>web bán hàng</title>
+  </head>
+  <body>
+    <div class="tieu-de">
+      <div class="logo-container">
+        <img src="/img/Logo-dhtl.png" alt="" />
+        <img src="/img/logo-khoacokhi.jpg" alt="" />
+      </div>
+      <div class="title-container">
+        <h1>Khoa cơ khí</h1>
+        <h1>Đại học thuỷ lợi</h1>
+      </div>
+    </div>
+    <div class="ten-web">
+      <h1>WEB ĐẶT ĐỒ ĂN</h1>
+    </div>
+    <h2 class="text1">CHỌN BÀN</h2>
+    <div class="all-table">
+      <div class="table table1">Bàn 1</div>
+      <div class="table table2">Bàn 2</div>
+      <div class="table table3">Bàn 3</div>
+      <div class="table table4">Bàn 4</div>
+      <div class="table table5">Bàn 5</div>
+      <div class="table table6">Bàn 6</div>
+    </div>
+
+    <!-- phần Menu -->
+    <div class="cart-icon">
+      <p><i class="fa-solid fa-cart-shopping"></i><span>0</span><sup>đ</sup></p>
+    </div>
+    <section class="product">
+      <div class="container">
+        <h2>MENU</h2>
+        <div class="product-items">
+          <!-- sp1 -->
+          <div class="product-item">
+            <img src="./img/img1.jpg" alt="" class="do_an" />
+            <div class="product-item-text">
+              <p><span>10.000</span><sup>đ</sup></p>
+              <h1>bánh mì 1</h1>
+            </div>
+            <button>Thêm vào giỏ hàng</button>
+          </div>
+          <!-- sp2 -->
+          <div class="product-item">
+            <img src="./img/img1.jpg" alt="" class="do_an" />
+            <div class="product-item-text">
+              <p><span>20.000</span><sup>đ</sup></p>
+              <h1>bánh mì 2</h1>
+            </div>
+            <button>Thêm vào giỏ hàng</button>
+          </div>
+          <!-- sp3 -->
+          <div class="product-item">
+            <img src="./img/img1.jpg" alt="" class="do_an" />
+            <div class="product-item-text">
+              <p><span>30.000</span><sup>đ</sup></p>
+              <h1>bánh mì 3</h1>
+            </div>
+            <button>Thêm vào giỏ hàng</button>
+          </div>
+          <!-- sp4 -->
+          <div class="product-item">
+            <img src="./img/img1.jpg" alt="" class="do_an" />
+            <div class="product-item-text">
+              <p><span>40.000</span><sup>đ</sup></p>
+              <h1>bánh mì 4</h1>
+            </div>
+            <button>Thêm vào giỏ hàng</button>
+          </div>
+          <!-- sp5 -->
+          <div class="product-item">
+            <img src="./img/img1.jpg" alt="" class="do_an" />
+            <div class="product-item-text">
+              <p><span>50.000</span><sup>đ</sup></p>
+              <h1>bánh mì 5</h1>
+            </div>
+            <button>Thêm vào giỏ hàng</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- giỏ hàng -->
+    <section class="cart">
+      <i class="fa-solid fa-xmark"></i>
+      <h2>Giỏ đồ</h2>
+      <form action="">
+        <table>
+          <thead>
+            <tr>
+              <th>Sản phẩm</th>
+              <th>Giá</th>
+              <th>SL</th>
+              <th>Chọn</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Toàn bộ thẻ 'tr' này để làm tượng trưng khi có Js rồi thì ko cần đến nó nữa -->
+            <!-- <tr>
+              <td><img src="./img/img1.jpg" alt="" /> <span class="title1">Bánh mì</span></td>
+              <td>
+                <p><span class="price">10.000</span><sup>đ</sup></p>
+              </td>
+              <td><input type="number" value="1" min="1" /></td>
+              <td>Xoá</td>
+            </tr>
+            <tr>
+              <td><img src="./img/img1.jpg" alt="" /> Bánh mì</td>
+              <td>
+                <p><span>10.000</span><sup>đ</sup></p>
+              </td>
+              <td><input type="number" value="1" min="1" /></td>
+              <td>Xoá</td>
+            </tr> -->
+          </tbody>
+        </table>
+        <div class="price-total">
+          <p>Tổng tiền:<span> 0</span><sup>đ</sup></p>
+        </div>
+        <button>Mua hàng</button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

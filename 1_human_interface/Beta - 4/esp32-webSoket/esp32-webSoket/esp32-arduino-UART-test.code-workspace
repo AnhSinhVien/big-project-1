@@ -1,0 +1,17 @@
+{
+  "folders": [
+	{
+		"name": "esp32-arduino-UART-test",
+		"path": "../esp32-arduino-UART-test"
+	},
+	{
+		"path": "."
+	},
+	{
+		"path": "../../3_websoket - 1"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "3_websoket - 1"
+  }
+}

@@ -1,0 +1,237 @@
+/* Tổng thể giao diện */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Bố cục chính */
+.giaodien {
+  display: flex;
+  height: 100vh;
+}
+
+/* Thanh công cụ bên trái */
+.Toolbar {
+  width: 250px;
+  font-size: 18px;
+  background-color: #f8e8d1;
+  border-right: 3px solid #cfcfc2;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.Toolbar button {
+  display: block;
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #ffbb99;
+  text-decoration: none;
+  color: #333;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.Toolbar button:hover {
+  background-color: #ff9966;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Phần nội dung chính */
+.workSpace1,
+.workSpace2 {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+/* -------------------WorkSpace 1------------------- */
+h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Danh sách bàn */
+.table-list {
+  margin-bottom: 20px;
+}
+
+.table-item {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.table-item:hover {
+  background-color: #f0f8ff;
+}
+
+.highlight {
+  background-color: yellow; /* Màu sáng khi có sự thay đổi */
+}
+
+/* Phần chi tiết đơn hàng */
+.order-list {
+  margin: 20px 0;
+  display: none;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+}
+
+#order-details {
+  margin-bottom: 10px;
+}
+
+#total-amount {
+  font-size: 18px;
+  color: #d9534f;
+}
+
+.workSpace1 button {
+  background-color: #5cb85c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.workSpace1 button:hover {
+  background-color: #4cae4c;
+}
+
+.workSpace1 button:focus {
+  outline: none;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #555;
+}
+
+h4 {
+  display: inline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .giaodien {
+    flex-direction: column;
+  }
+
+  .Toolbar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .workSpace1 {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/* .workSpace1 {
+  display: none;
+} */
+/* ---------------------------------------------------------- */
+/* ------------------------WorkSpace 2 -----------------------*/
+/* Căn chỉnh và làm đẹp cho phần .workSpace2 */
+/* Căn chỉnh và làm đẹp cho phần .workSpace2 */
+.workSpace2 {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Bố trí bàn số 0 ở trung tâm */
+.table0 {
+  /* width: 38.5%; /* Đặt chiều rộng để cân đối ở giữa */
+  width: 595px; /* Đặt chiều rộng để cân đối ở giữa */
+  height: 150px;
+  display: flex;
+  margin-left: 20%;
+  margin-top: 3%;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #eaeaea;
+  margin-bottom: 20px; /* Khoảng cách với bàn bên dưới */
+  background-image: url("./img/image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button0 {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #ff7f50;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(255, 127, 80, 0.4);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Bố trí các bàn từ 1 đến 6 thành hai cột */
+.tableAll {
+  display: grid;
+  margin-left: 20%;
+  grid-template-columns: 1fr 1fr; /* Tạo 2 cột */
+  gap: 20px;
+  width: 100%;
+  max-width: 600px; /* Căn giữa */
+}
+
+/* Căn chỉnh các bàn 1-6 trong từng ô lưới */
+.table {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #eaeaea;
+  background-image: url("./img/image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Nút cho từng bàn */
+.tableAll button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #ff7f50;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(255, 127, 80, 0.4);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.tableAll button:hover {
+  background-color: #ff6347;
+  box-shadow: 0px 6px 15px rgba(255, 99, 71, 0.6);
+}

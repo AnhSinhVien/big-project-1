@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styse.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-database.js"></script>
+    <title>web nhận dữ liệu</title>
+  </head>
+  <body>
+    <div class="giaodien">
+      <div class="Toolbar">
+        <button id="homeBtn">Trang Chủ</button>
+        <button id="controlBtn">Điều Khiển</button>
+      </div>
+      <div class="workSpace1">
+        <h1>Danh sách bàn đang được đặt</h1>
+        <div id="table-list" class="table-list"></div>
+        <button id="reset-all">Reset Tất Cả Thông Tin</button>
+        <div id="order-list" class="order-list">
+          <h2>Chi tiết đơn hàng</h2>
+          <div id="order-details"></div>
+          <p><strong>Tổng tiền: </strong><span id="total-amount"></span> đ</p>
+          <button id="reset-table">Reset Thông Tin Bàn</button>
+        </div>
+      </div>
+
+      <div class="workSpace2">
+        <div class="tieuDe">
+          <h1>Danh Sách các bàn</h1>
+        </div>
+        <div class="table table0">
+          <button class="button0" onclick="sendTableNumber(0)">Bàn 0</button>
+        </div>
+        <div class="tableAll">
+          <div class="table table1">
+            <button class="button1" onclick="sendTableNumber(1)">Bàn 1</button>
+          </div>
+          <div class="table table2">
+            <button class="button2" onclick="sendTableNumber(2)">Bàn 2</button>
+          </div>
+          <div class="table table3">
+            <button class="button3" onclick="sendTableNumber(3)">Bàn 3</button>
+          </div>
+          <div class="table table4">
+            <button class="button4" onclick="sendTableNumber(4)">Bàn 4</button>
+          </div>
+          <div class="table table5">
+            <button class="button5" onclick="sendTableNumber(5)">Bàn 5</button>
+          </div>
+          <div class="table table6">
+            <button class="button6" onclick="sendTableNumber(6)">Bàn 6</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
