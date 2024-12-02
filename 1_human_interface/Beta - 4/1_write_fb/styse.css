@@ -8,24 +8,31 @@ body {
   height: 100vh;
   margin: 0;
 }
-
 .tieu-de {
   display: flex; /* Sử dụng flexbox để dễ dàng căn chỉnh các phần tử */
   justify-content: space-between; /* Phân bổ không gian giữa logo và tiêu đề */
   align-items: center; /* Căn giữa theo chiều dọc */
   height: 10vh; /* Chiều cao của header */
-  padding: 0 2%; /* Thêm padding trái và phải theo tỷ lệ phần trăm */
-  border: #ffffff solid 0.2em;
+  padding: 0 20px; /* Thêm padding trái và phải */
+  border: #ffffff solid 3px;
+  /* background: rgb(85, 217, 158);
+  background: linear-gradient(
+    90deg,
+    rgba(85, 217, 158, 1) 1%,
+    rgba(88, 162, 143, 1) 16%,
+    rgba(36, 36, 152, 1) 51%,
+    rgba(0, 212, 255, 1) 100%
+  ); */
 }
 
 .tieu-de img {
-  height: 5rem; /* Điều chỉnh chiều cao của logo bằng rem */
-  margin-right: 1em; /* Khoảng cách giữa các logo */
+  height: 90px; /* Điều chỉnh chiều cao của logo */
+  margin-right: 10px; /* Khoảng cách giữa các logo */
 }
 
 .tieu-de h1 {
   margin: 0; /* Loại bỏ margin mặc định */
-  font-size: 2em; /* Kích thước chữ cho tiêu đề */
+  font-size: 32px; /* Kích thước chữ cho tiêu đề */
   color: rgb(8, 24, 243); /* Màu chữ */
   text-align: center; /* Căn phải cho các tiêu đề */
 }
@@ -41,7 +48,7 @@ body {
   -webkit-text-fill-color: transparent;
 
   color: transparent; /* Làm cho màu chữ trở nên trong suốt */
-  font-size: 1.7em; /* Kích thước chữ */
+  font-size: 32px; /* Kích thước chữ */
   font-weight: bold; /* Đậm chữ */
   text-align: center;
 }
@@ -51,24 +58,22 @@ body {
   justify-content: center;
   font-size: 1.5em;
 }
-
 .all-table {
   display: flex;
   justify-content: center;
   margin-bottom: 2%;
   border-bottom: 2px solid rgb(222, 235, 230);
-  padding: 1.3rem 0; /* Padding thay bằng rem */
+  padding: 13px 0;
 }
 
 .all-table .table {
-  padding: 2vh 4vw; /* Tăng cường sự linh hoạt bằng đơn vị vh, vw */
+  padding: 2vh 4vb;
   border: 2px solid black;
-  margin: 0 1em;
+  margin: 0px 1em;
   cursor: pointer;
   font-size: 1.5em;
   background: wheat;
 }
-
 .clicked {
   background-color: yellow;
 }
@@ -76,12 +81,11 @@ body {
 .table:hover {
   background-color: greenyellow;
 }
-
 .table {
-  padding: 0 2rem;
+  padding: 0 13px;
   cursor: pointer;
   border: none;
-  border-radius: 0.5rem; /* Border radius bằng rem */
+  border-radius: 5px;
   transform: all 0.3s ease;
 }
 
@@ -93,49 +97,44 @@ body {
 }
 
 .container {
-  max-width: 70%; /* Chuyển từ pixel sang phần trăm */
+  max-width: 1200px;
   margin: auto;
 }
-
 .container h2:first-child {
   display: flex;
   justify-content: center;
   border-bottom: 2px solid rgb(222, 235, 230);
-  padding: 1.3rem 0;
-  font-size: 2em;
+  padding: 13px 0;
+  font-size: 32px;
 }
-
 .product-items {
   display: flex;
   justify-content: space-between;
   background-color: wheat;
-  padding: 1.3rem;
+  padding: 13px;
 }
-
 .do_an {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
-
 .product-item {
   width: 16%;
   background-color: white;
-  padding: 1.2rem;
+  padding: 12px;
   text-align: center;
 }
-
 .product-item-text {
   display: flex;
   justify-content: space-between;
 }
 
 .product-item button {
-  margin-top: 1.3rem;
-  height: 3rem;
-  padding: 0 1.3rem;
+  margin-top: 13px;
+  height: 30px;
+  padding: 0 13px;
   cursor: pointer;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 5px;
   transform: all 0.3s ease;
 }
 
@@ -144,24 +143,22 @@ body {
 }
 
 .product-item-text p {
-  font-size: 1.8rem;
+  font-size: 18px;
 }
 
 /* giỏ hàng */
+
 .cart tbody tr td:first-child {
   display: flex;
   align-items: center;
 }
-
 .cart tbody tr img {
-  width: 7rem;
+  width: 70px;
 }
-
 .cart tbody tr td input {
-  width: 3rem;
+  width: 30px;
   outline: none;
 }
-
 .cart tbody tr td:last-child {
   cursor: pointer;
   text-align: right;
@@ -171,25 +168,22 @@ body {
   width: 50%;
   margin: auto;
   text-align: center;
-  padding-top: 3rem;
+  padding-top: 30px;
 }
-
 .cart h2 {
-  margin-top: 2rem;
+  margin-top: 20px;
   font-size: 2em;
 }
 
 .cart table {
   width: 100%;
 }
-
 .cart table thead tr th:first-child {
   text-align: left;
 }
-
 .cart table tr td {
   border-bottom: 2px solid rgb(222, 235, 230);
-  padding: 1.3rem 0;
+  padding: 13px 0;
 }
 
 .price-total {
@@ -199,13 +193,12 @@ body {
 .price-total p:first-child {
   font-weight: bold;
 }
-
 .cart table thead tr th:last-child {
   text-align: right;
 }
 
 .cart tbody .title1 {
-  margin-left: 5rem;
+  margin-left: 50px;
   font-weight: bold;
 }
 
@@ -213,23 +206,23 @@ body {
 .cart {
   position: fixed;
   height: 100vh;
-  width: 50%;
+  width: 500px;
   right: 0;
   top: 0;
   background-color: rgb(232, 245, 234);
-  padding: 1.2rem 2rem;
+  padding: 12px 20px;
   overflow: scroll;
   right: -100%;
   transform: all 0.3s ease;
 }
 
 .cart button {
-  margin-top: 1.3rem;
-  height: 3rem;
-  padding: 0 3rem;
+  margin-top: 13px;
+  height: 30px;
+  padding: 0 30px;
   cursor: pointer;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 5px;
   transform: all 0.5s ease;
   background-color: #d866ac;
   font-weight: bold;
@@ -242,22 +235,20 @@ body {
 
 .cart-icon {
   cursor: pointer;
-  margin-left: 3rem;
-  margin-bottom: -5.5rem;
+  margin-left: 30px;
+  margin-bottom: -55px;
   font-size: 1.5em;
 }
-
 .cart-icon span {
-  margin-left: 0.7rem;
+  margin-left: 7px;
 }
 
 .cart i {
   cursor: pointer;
   display: flex;
   right: 0;
-  width: 1.2rem;
+  width: 12px;
 }
-
 .cart i:hover {
   background-color: rgb(255, 4, 4);
   transform: scale(1.2); /* Phóng to button lên 1.2 lần khi hover */
