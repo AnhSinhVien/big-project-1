@@ -109,6 +109,8 @@ body {
 }
 .product-items {
   display: flex;
+  flex-wrap: wrap; /* Cho phép xuống dòng */
+  gap: 5px; /* Giảm khoảng cách giữa các bàn */
   justify-content: space-between;
   /* background-color: wheat; */
   padding: 13px;

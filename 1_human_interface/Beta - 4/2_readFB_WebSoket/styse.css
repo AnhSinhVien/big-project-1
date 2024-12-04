@@ -14,23 +14,23 @@ body {
 
 /* Thanh công cụ bên trái */
 .Toolbar {
-  width: 20%; /* Tỷ lệ với chiều rộng màn hình */
-  font-size: 1.125rem; /* 18px */
+  width: 250px;
+  font-size: 18px;
   background-color: #f8e8d1;
-  border-right: 0.2rem solid #cfcfc2; /* 3px */
-  padding: 1.25rem; /* 20px */
-  box-shadow: 0.125rem 0 0.3125rem rgba(0, 0, 0, 0.1); /* 2px, 5px */
+  border-right: 3px solid #cfcfc2;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .Toolbar button {
   display: block;
-  width: 100%; /* Toàn bộ chiều rộng cha */
-  padding: 0.625rem; /* 10px */
-  margin-bottom: 0.9375rem; /* 15px */
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 15px;
   background-color: #ffbb99;
   text-decoration: none;
   color: #333;
-  border-radius: 0.5rem; /* 8px */
+  border-radius: 8px;
   text-align: center;
   transition: background-color 0.3s;
 }
@@ -45,28 +45,29 @@ body {
 .workSpace1,
 .workSpace2 {
   flex-grow: 1;
-  padding: 2.5rem; /* 40px */
+  padding: 40px;
   background-color: #ffffff;
-  border-radius: 0.625rem; /* 10px */
-  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px */
-  margin: 1.25rem; /* 20px */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
 }
-
+/* -------------------WorkSpace 1------------------- */
 h1 {
-  font-size: 1.75rem; /* 28px */
+  font-size: 28px;
   color: #333;
-  margin-bottom: 1.25rem; /* 20px */
+  margin-bottom: 20px;
 }
 
+/* Danh sách bàn */
 .table-list {
-  margin-bottom: 1.25rem; /* 20px */
+  margin-bottom: 20px;
 }
 
 .table-item {
-  padding: 0.9375rem; /* 15px */
-  margin: 0.625rem 0; /* 10px */
-  border: 0.0625rem solid #ccc; /* 1px */
-  border-radius: 0.5rem; /* 8px */
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -76,32 +77,33 @@ h1 {
 }
 
 .highlight {
-  background-color: yellow;
+  background-color: yellow; /* Màu sáng khi có sự thay đổi */
 }
 
+/* Phần chi tiết đơn hàng */
 .order-list {
-  margin: 1.25rem 0; /* 20px */
+  margin: 20px 0;
   display: none;
-  padding: 1.25rem; /* 20px */
+  padding: 20px;
   background-color: #f1f1f1;
-  border-radius: 0.5rem; /* 8px */
+  border-radius: 8px;
 }
 
 #order-details {
-  margin-bottom: 0.625rem; /* 10px */
+  margin-bottom: 10px;
 }
 
 #total-amount {
-  font-size: 1.125rem; /* 18px */
+  font-size: 18px;
   color: #d9534f;
 }
 
 .workSpace1 button {
   background-color: #5cb85c;
   color: white;
-  padding: 0.625rem 1.25rem; /* 10px 20px */
+  padding: 10px 20px;
   border: none;
-  border-radius: 0.3125rem; /* 5px */
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -110,8 +112,12 @@ h1 {
   background-color: #4cae4c;
 }
 
+.workSpace1 button:focus {
+  outline: none;
+}
+
 .timestamp {
-  font-size: 0.75rem; /* 12px */
+  font-size: 12px;
   color: #555;
 }
 
@@ -135,89 +141,97 @@ h4 {
     margin-left: 0;
   }
 }
-
-/* WorkSpace 2 */
+/* .workSpace1 {
+  display: none;
+} */
+/* ---------------------------------------------------------- */
+/* ------------------------WorkSpace 2 -----------------------*/
+/* Căn chỉnh và làm đẹp cho phần .workSpace2 */
+/* Căn chỉnh và làm đẹp cho phần .workSpace2 */
 .workSpace2 {
   display: none;
   flex-direction: column;
   align-items: center;
-  padding: 1.25rem; /* 20px */
+  padding: 20px;
   background-color: #f4f4f9;
-  border-radius: 0.75rem; /* 12px */
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1); /* 4px, 12px */
-  margin-top: 1.25rem; /* 20px */
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
-/* Bố trí bàn số 0 */
+/* Bố trí bàn số 0 ở trung tâm */
 .table0 {
-  width: 42%; /* Linh hoạt thay vì px */
-  height: 9.375rem; /* 150px */
+  /* width: 38.5%; /* Đặt chiều rộng để cân đối ở giữa */
+  width: 595px; /* Đặt chiều rộng để cân đối ở giữa */
+  height: 150px;
   display: flex;
   margin-left: 20%;
   margin-top: 3%;
   justify-content: center;
   align-items: center;
-  border: 0.125rem solid black; /* 2px */
-  border-radius: 0.625rem; /* 10px */
+  border: 2px solid black;
+  border-radius: 10px;
   background-color: #eaeaea;
-  margin-bottom: 1.25rem; /* 20px */
+  margin-bottom: 20px; /* Khoảng cách với bàn bên dưới */
   background-image: url("./img/image.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2); /* 10px */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .button0 {
-  padding: 0.625rem 1.25rem; /* 10px 20px */
-  font-size: 1.125rem; /* 18px */
+  padding: 10px 20px;
+  font-size: 18px;
   color: #ffffff;
   background-color: #ff7f50;
   border: none;
-  border-radius: 0.5rem; /* 8px */
+  border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 0.25rem 0.625rem rgba(255, 127, 80, 0.4); /* 4px 10px */
+  box-shadow: 0px 4px 10px rgba(255, 127, 80, 0.4);
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-/* Các bàn từ 1 đến 6 */
+/* Bố trí các bàn từ 1 đến 6 thành hai cột */
 .tableAll {
   display: grid;
   margin-left: 20%;
-  grid-template-columns: 1fr 1fr; /* 2 cột */
-  gap: 1.25rem; /* 20px */
+  grid-template-columns: 1fr 1fr; /* Tạo 2 cột */
+  gap: 20px;
   width: 100%;
-  max-width: 37.5rem; /* 600px */
+  max-width: 600px; /* Căn giữa */
 }
 
+/* Căn chỉnh các bàn 1-6 trong từng ô lưới */
 .table {
-  height: 9.375rem; /* 150px */
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.125rem solid black; /* 2px */
-  border-radius: 0.625rem; /* 10px */
+  border: 2px solid black;
+  border-radius: 10px;
   background-color: #eaeaea;
   background-image: url("./img/image.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2); /* 10px */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Nút cho từng bàn */
 .tableAll button {
-  padding: 0.625rem 1.25rem; /* 10px 20px */
-  font-size: 1.125rem; /* 18px */
+  padding: 10px 20px;
+  font-size: 18px;
   color: #ffffff;
   background-color: #ff7f50;
   border: none;
-  border-radius: 0.5rem; /* 8px */
+  border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 0.25rem 0.625rem rgba(255, 127, 80, 0.4); /* 4px 10px */
+  box-shadow: 0px 4px 10px rgba(255, 127, 80, 0.4);
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .tableAll button:hover {
   background-color: #ff6347;
-  box-shadow: 0 0.375rem 0.9375rem rgba(255, 99, 71, 0.6); /* 6px 15px */
+  box-shadow: 0px 6px 15px rgba(255, 99, 71, 0.6);
 }
