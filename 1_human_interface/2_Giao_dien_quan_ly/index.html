@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styse.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-database.js"></script>
+    <title>web nhận dữ liệu</title>
+  </head>
+  <body>
+    <div class="giaodien">
+      <div class="Toolbar">
+        <button id="homeBtn">Trang Chủ</button>
+        <button id="controlBtn">Điều Khiển</button>
+      </div>
+      <div class="workSpace1">
+        <h1>Danh sách bàn đang được đặt</h1>
+        <div id="table-list">
+          <!-- Mỗi bàn sẽ là một thẻ div có lớp 'table-item'  -->
+          <!-- <div class="table-item">
+            <strong>Bàn 1 - Tổng tiền: 500,000 đ</strong>
+            <div class="timestamp">Thời gian đặt: 2024-12-17 10:00:00</div>
+          </div>
+
+          <div class="table-item">
+            <strong>Bàn 2 - Tổng tiền: 350,000 đ</strong>
+            <div class="timestamp">Thời gian đặt: 2024-12-17 10:15:00</div>
+          </div> -->
+        </div>
+        <button id="clear-all">Xoá Tất Cả Thông Tin</button>
+        <div id="order-list">
+          <h2>Chi tiết đơn hàng</h2>
+          <div id="order-details">
+            <!-- Tiêu đề của đơn hàng, ví dụ Bàn 1 -->
+            <!-- <h3>Đơn hàng của Bàn 1</h3> -->
+
+            <!-- Mỗi món ăn trong đơn hàng sẽ là một thẻ div -->
+            <!-- <div class="cacMon">
+              <h4>Món 1</h4>
+              - Số lượng: 2, Giá: 60,000 đ
+            </div>
+
+            <div class="cacMon">
+              <h4>Món 2</h4>
+              - Số lượng: 1, Giá: 25,000 đ
+            </div> -->
+          </div>
+          <p><strong>Tổng tiền: </strong><span id="total-amount">0</span> đ</p>
+          <button id="clear-table">Xoá Thông Tin Bàn</button>
+        </div>
+      </div>
+
+      <div class="workSpace2">
+        <div class="tieuDe">
+          <h1>Danh Sách các bàn</h1>
+        </div>
+        <div class="table table0">
+          <button id="button0" class="button0" onclick="sendTableNumber(0)">
+            bếp
+          </button>
+        </div>
+        <div class="tableAll">
+          <div class="table table1">
+            <button class="button1" onclick="sendTableNumber(1)">Bàn 1</button>
+          </div>
+          <div class="table table2">
+            <button class="button2" onclick="sendTableNumber(2)">Bàn 2</button>
+          </div>
+          <div class="table table3">
+            <button class="button3" onclick="sendTableNumber(3)">Bàn 3</button>
+          </div>
+          <div class="table table4">
+            <button class="button4" onclick="sendTableNumber(4)">Bàn 4</button>
+          </div>
+          <div class="table table5">
+            <button class="button5" onclick="sendTableNumber(5)">Bàn 5</button>
+          </div>
+          <div class="table table6">
+            <button class="button6" onclick="sendTableNumber(6)">Bàn 6</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
