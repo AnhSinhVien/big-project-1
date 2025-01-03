@@ -145,7 +145,7 @@ function cartTotal() {
 
 // Lấy thông tin bàn và đơn hàng khi nhấn nút "Mua hàng"
 const muaHang = document.querySelector(".cart button");
-// Lấy thông tin bàn 1
+// Lấy thông tin bàn chọn
 muaHang.addEventListener("click", function () {
   // Lấy bàn được chọn
   const banDuocChon = document.querySelector(".all-table .table.clicked");
